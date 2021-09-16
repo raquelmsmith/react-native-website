@@ -49,7 +49,7 @@ These are going to be global Gradle variables, which we can later use in our Gra
 
 ## Adding signing config to your app's Gradle config
 
-The last configuration step that needs to be done is to setup release builds to be signed using upload key. Edit the file `android/app/build.gradle` in your project folder, and add the signing config,
+The last configuration step that needs to be done is to setup release builds to be signed using upload key. Edit the file `android/app/build.gradle` in your project folder, and add the release signing config, then point the release `buildTypes` to `signingConfig.release`.
 
 ```gradle
 ...
